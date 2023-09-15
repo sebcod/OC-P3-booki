@@ -4,19 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    <script
+      src="https://kit.fontawesome.com/945991a66c.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -33,9 +24,38 @@
         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
         <form action="post">
-          <i></i><input type="text" /><input type="submit" />
+          <label for="find"
+            ><i class="fa-solid fa-location-dot fa-lg"></i></label
+          ><input type="text" id="find" placeholder="Marseille, France" /><input
+            type="submit"
+            value="Rechercher"
+          />
         </form>
-        <div class="filterContainer"></div>
+        <div class="filterContainer">
+          <h3>Filters</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+              <h3>économique</h3>
+            </li>
+            <li>
+              <i class="fa-solid fa-person fa-lg"></i>
+              <h3>familial</h3>
+            </li>
+            <li>
+              <i class="fa-solid fa-heart fa-lg"></i>
+              <h3>Romantique</h3>
+            </li>
+            <li>
+              <i class="fa-solid fa-fire fa-lg"></i>
+              <h3>nos pépites</h3>
+            </li>
+          </ul>
+        </div>
+        <p>
+          <i class="fa-solid fa-info fa-sm"></i>Plus de 500 Logements sont
+          disponibles dans cette ville
+        </p>
       </section>
     </main>
     <footer></footer>

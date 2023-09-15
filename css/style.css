@@ -1,15 +1,18 @@
-/****** General ***********/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< General >>>>>>>>>>>>>>>>>>>>>>>>*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
+  --seconde-bg-color: #d9d9d9;
   --filter-bg-color: #deebff;
-  /* gris #d9d9d9d */
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
 }
 a {
   color: inherit;
@@ -51,6 +54,83 @@ Nav a {
 nav a:hover {
   color: var(--main-color);
   border-top: solid 2px var(--main-color);
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<   find   >>>>>>>>>>>>>>>>>>>>>>>*/
+.find {
+  border: 1px solid red;
+  margin-top: 30px;
+}
+h1 {
+  margin-bottom: 8px;
+}
+/* form *********************/
+.find form {
+  margin: 30px 0;
+  height: 49px;
+  display: flex;
+}
+.find form label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+  background-color: var(--seconde-bg-color);
+}
+.find form input[type="text"] {
+  padding: 0 24px;
+  width: 195px;
+}
+.find form ::placeholder {
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+.find form input[type="submit"] {
+  width: 132px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 0 10px 10px 0;
+}
+/* filterContainer ***************/
+.filterContainer,
+ul,
+li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.filterContainer i {
+  color: var(--main-color);
+}
+.filterContainer li {
+  padding: 19px;
+  border: solid 2px var(--seconde-bg-color);
+  border-radius: 25px;
+}
+.filterContainer li:hover {
+  background-color: var(--filter-bg-color);
+}
+/* +P *********************************/
+.filterContainer + P {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filterContainer + P i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color);
+  border: solid 2px var(--seconde-bg-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 
 /****** Hebergements And Populaires ***********/
