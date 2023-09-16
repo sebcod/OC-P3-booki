@@ -13,6 +13,8 @@
   list-style: none;
   border: none;
   outline: none;
+
+  /* box-shadow: 0 0 0 3px red inset; */
 }
 a {
   color: inherit;
@@ -31,9 +33,8 @@ body {
   font-size: 1em;
 }
 
-/***   Header   ***/
+/*<<<<<<<<<<<<<<<<<<<<<   header   >>>>>>>>>>>>>>>>>>>>>>>*/
 header {
-  border: 1px solid rgb(0, 255, 8);
   height: 79px;
   display: flex;
   justify-content: space-between;
@@ -58,7 +59,6 @@ nav a:hover {
 
 /*<<<<<<<<<<<<<<<<<<<<<   find   >>>>>>>>>>>>>>>>>>>>>>>*/
 .find {
-  border: 1px solid red;
   margin-top: 30px;
 }
 h1 {
@@ -87,7 +87,7 @@ h1 {
   font-weight: 600;
   color: black;
 }
-.find form input[type="submit"] {
+.find form button {
   width: 132px;
   background-color: var(--main-color);
   color: white;
@@ -95,10 +95,19 @@ h1 {
   font-size: 18px;
   border-radius: 0 10px 10px 0;
 }
+.find button:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 60px;
+  display: none;
+}
+
 /* filterContainer ***************/
 .filterContainer,
-ul,
-li {
+.filterContainer ul,
+.filterContainer li {
   height: 50px;
   display: flex;
   align-items: center;
@@ -111,6 +120,7 @@ li {
   padding: 19px;
   border: solid 2px var(--seconde-bg-color);
   border-radius: 25px;
+  text-transform: capitalize;
 }
 .filterContainer li:hover {
   background-color: var(--filter-bg-color);
@@ -133,20 +143,79 @@ li {
   border-radius: 50%;
 }
 
-/****** Hebergements And Populaires ***********/
-.card {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting ant popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+.hostingAndPopular {
+  margin-top: 35px;
+  display: flex;
+  gap: 40px;
 }
 
-/****** Hebergements ***********/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
+.hosting {
+  border-radius: 20px;
+  background-color: var(--seconde-bg-color);
+  padding: 30px;
+  min-width: 70%;
+}
+.cardContainer {
+  margin: 30px 0;
+  display: flex;
+  gap: 30px;
+}
+.card {
+  flex-grow: 1;
+  background-color: var(--main-bg-color);
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  padding: 5px 5px 10px 5px;
+  border-radius: 20px;
+}
+.card img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 114px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+.cardContent {
+  padding: 0 10px;
+}
+.cardContent h3 {
+  font-size: 1em;
+  margin: 4px 0 6px;
+}
+.cardContent p {
+  margin-bottom: 6px;
+}
+.cardContent ul,
+.cardContent li {
+  display: flex;
+  color: var(--main-color);
+}
+.cardContent li:last-child {
+  color: var(--seconde-bg-color);
+}
+.cardContent span {
+  font-weight: 800;
+}
+.hosting > a {
+  font-weight: 800;
+}
 
-/****** Populaires ***********/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+.popular {
+  width: 30%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--seconde-bg-color);
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  /* 992px */
 }
 
 /* Small devices (phones, less than 768px) */
