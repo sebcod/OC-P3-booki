@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 :root {
   --main-color: #0065fc;
+  --boddy-bg-color: white;
   --main-bg-color: #f2f2f2;
   --seconde-bg-color: #d9d9d9;
   --filter-bg-color: #deebff;
@@ -30,7 +31,7 @@ body {
   max-width: 1440px;
   margin: auto;
   padding: 0 50px;
-  background-color: var(--main-bg-color);
+  background-color: var(--boddy-bg-color);
   font-family: "Raleway", sans-serif;
   font-size: 1em;
 }
@@ -78,7 +79,7 @@ h1 {
   justify-content: center;
   width: 50px;
   border-radius: 10px 0 0 10px;
-  background-color: var(--seconde-bg-color);
+  background-color: var(--main-bg-color);
 }
 .find form input[type="text"] {
   padding: 0 24px;
@@ -139,7 +140,7 @@ h1 {
   align-items: center;
   justify-content: center;
   color: var(--main-color);
-  border: solid 2px var(--seconde-bg-color);
+  border: solid 2px var(--main-bg-color);
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -155,7 +156,7 @@ h1 {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
 .hosting {
   border-radius: 20px;
-  background-color: var(--seconde-bg-color);
+  background-color: var(--main-bg-color);
   padding: 30px;
   width: 67%;
 }
@@ -167,8 +168,7 @@ h1 {
 .card {
   flex-grow: 1;
   flex-basis: 0;
-  background-color: var(--main-bg-color);
-  /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+  background-color: var(--boddy-bg-color);
   box-shadow: var(--Box-shadow);
   padding: 5px 5px 10px 5px;
   border-radius: 20px;
@@ -200,7 +200,7 @@ h1 {
   margin-bottom: 5px;
 }
 .cardContent li:last-child {
-  color: var(--seconde-bg-color);
+  color: var(--main-bg-color);
 }
 .cardContent span {
   font-weight: 800;
@@ -214,7 +214,7 @@ h1 {
   width: 33%;
   padding: 30px;
   border-radius: 20px;
-  background-color: var(--seconde-bg-color);
+  background-color: var(--main-bg-color);
 }
 .popular h2 {
   display: flex;
