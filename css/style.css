@@ -183,17 +183,18 @@ h1 {
   letter-spacing: 1px;
 }
 .cardContent h3 {
-  font-size: 1em;
-  margin: 4px 0 6px;
+  font-size: 0.9em;
+  margin: 6px 0 10px;
 }
 .cardContent p {
-  margin-bottom: 6px;
-  font-size: 0.8em;
+  margin-bottom: 15px;
+  font-size: 0.74em;
 }
 .cardContent ul,
 .cardContent li {
   display: flex;
   color: var(--main-color);
+  margin-bottom: 5px;
 }
 .cardContent li:last-child {
   color: var(--seconde-bg-color);
