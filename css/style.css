@@ -277,6 +277,22 @@ h1 {
   padding: 20px;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<   header   >>>>>>>>>>>>>>>>>>>>>>>*/
+footer {
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+footer section {
+  padding: 20px;
+  flex-grow: 1;
+}
+footer h2::first-letter {
+  text-transform: uppercase;
+}
+footer li {
+  margin-top: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
