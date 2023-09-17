@@ -5,6 +5,7 @@
   --main-bg-color: #f2f2f2;
   --seconde-bg-color: #d9d9d9;
   --filter-bg-color: #deebff;
+  --Box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.202);
 }
 * {
   margin: 0;
@@ -167,7 +168,8 @@ h1 {
   flex-grow: 1;
   flex-basis: 0;
   background-color: var(--main-bg-color);
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+  box-shadow: var(--Box-shadow);
   padding: 5px 5px 10px 5px;
   border-radius: 20px;
 }
@@ -250,20 +252,18 @@ h1 {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< Activities >>>>>>>>>>>>>>>>>>>>>>>>*/
 .activities {
-  border: solid 1px;
-  margin-top: 30px;
+  margin-top: 35px;
   padding: 30px;
 }
-.activities h2 {
-  border: solid 1px;
-}
 .activitiesContainer {
+  margin-top: 30px;
   display: flex;
   gap: 30px;
 }
 .cardActivities {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  border-radius: 20px;
   flex-grow: 1;
+  box-shadow: var(--Box-shadow);
 }
 .cardActivities img {
   width: 100%;
@@ -271,6 +271,10 @@ h1 {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1 / 1;
+  border-radius: 20px 20px 0 0;
+}
+.cardActivities h3 {
+  padding: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
