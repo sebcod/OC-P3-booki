@@ -27,7 +27,6 @@ li {
 }
 
 body {
-  border: 1px solid blue;
   max-width: 1440px;
   margin: auto;
   padding: 0 50px;
@@ -279,6 +278,7 @@ h1 {
 
 /*<<<<<<<<<<<<<<<<<<<<<   header   >>>>>>>>>>>>>>>>>>>>>>>*/
 footer {
+  margin-top: 35px;
   background-color: var(--main-bg-color);
   display: flex;
 }
