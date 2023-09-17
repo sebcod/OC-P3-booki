@@ -247,6 +247,31 @@ h1 {
   padding-bottom: 5px;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Activities >>>>>>>>>>>>>>>>>>>>>>>>*/
+.activities {
+  border: solid 1px;
+  margin-top: 30px;
+  padding: 30px;
+}
+.activities h2 {
+  border: solid 1px;
+}
+.activitiesContainer {
+  display: flex;
+  gap: 30px;
+}
+.cardActivities {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  flex-grow: 1;
+}
+.cardActivities img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
