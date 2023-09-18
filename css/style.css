@@ -7,6 +7,7 @@
   --seconde-bg-color: #d9d9d9;
   --filter-bg-color: #deebff;
   --Box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+  --Box-shadow-2: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 * {
   margin: 0;
@@ -68,6 +69,9 @@ h1 {
 }
 /* form *********************/
 .find form {
+  border: solid 2px var(--main-bg-color);
+  width: fit-content;
+  border-radius: 10px;
   margin: 30px 0;
   height: 49px;
   display: flex;
@@ -77,11 +81,10 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 50px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 8px 0 0 8px;
   background-color: var(--main-bg-color);
 }
 .find form input[type="text"] {
-  border: solid 2px var(--main-bg-color);
   padding: 0 24px;
   width: 195px;
 }
@@ -96,13 +99,17 @@ h1 {
   color: white;
   font-weight: 600;
   font-size: 18px;
-  border-radius: 0 10px 10px 0;
+  border: solid 2px var(--main-color);
+  border-radius: 0 8px 8px 0;
 }
 .find button:last-child {
+  box-shadow: var(--Box-shadow-2);
   display: flex;
   justify-content: center;
   align-items: center;
+
   border-radius: 15px;
+  scale: 1.15;
   width: 60px;
   display: none;
 }
@@ -128,7 +135,7 @@ h1 {
 .filterContainer li:hover {
   background-color: var(--filter-bg-color);
 }
-/* +P *********************************/
+/* filterContainer +P *********************************/
 .filterContainer + P {
   margin-top: 35px;
   display: flex;
@@ -230,9 +237,10 @@ h1 {
   margin-bottom: 0;
 }
 .popular .card {
-  width: 100%;
-  display: flex;
   padding: 5px;
+}
+.popular article {
+  display: flex;
 }
 .popular .card img {
   border-radius: 15px 0 0 15px;
@@ -263,11 +271,13 @@ h1 {
 .cardActivities {
   border-radius: 20px;
   flex-grow: 1;
+  flex-basis: 0;
   box-shadow: var(--Box-shadow);
 }
 .cardActivities img {
   width: 100%;
-  height: 380px;
+  height: 21.4vw; /*380px*/
+  max-height: 380px;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1 / 1;
@@ -294,14 +304,83 @@ footer li {
   margin-top: 15px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<< Media queries >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-  /* 992px */
+@media screen and (max-width: 1024px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .hostingAndPopular {
+    flex-direction: column;
+  }
+  .hosting {
+    width: 100%;
+  }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .popular {
+    width: 100%;
+  }
+  .popular .cardContainer {
+    flex-direction: row;
+  }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Activities >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .cardActivities img {
+    height: 18vw;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Body >>>>>>>>>>>>>>>>>>>>>>>>*/
+  body {
+    padding: 0;
+  }
+
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>*/
+  header {
+    height: fit-content;
+    flex-direction: column;
+  }
+  header img {
+    height: 19px;
+    margin: 30px;
+  }
+  Nav {
+    gap: 0;
+  }
+  Nav a {
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: start;
+    justify-content: center;
+  }
+  nav a:hover {
+    border-top: none;
+    border-bottom: solid 2px var(--main-color);
+  }
+
+  /*<<<<<<<<<<<<<<<<<<<<<   find   >>>>>>>>>>>>>>>>>>>>>>>*/
+  .find {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  /* form *********************/
+  .find form {
+  }
+  .find form input[type="text"] {
+    padding: 0 24px;
+    width: 195px;
+  }
+  .find form ::placeholder {
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+  }
+  .find form button {
+    display: none;
+  }
+  .find button:last-child {
+    display: block;
+  }
 }
