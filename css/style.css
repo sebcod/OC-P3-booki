@@ -122,7 +122,6 @@ h1 {
   gap: 13px;
 }
 .filterContainer > h3 {
-  border: solid 1px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -348,7 +347,6 @@ footer li {
 
   /*<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>*/
   header {
-    border: solid 1px;
     height: fit-content;
     flex-direction: column;
   }
@@ -374,7 +372,6 @@ footer li {
   .find {
     margin-top: 0;
     padding: 40px 20px 0px 20px;
-    border: solid 1px;
   }
 
   /* form *********************/
@@ -400,9 +397,25 @@ footer li {
     color: var(--main-color);
   }
   .filterContainer li {
-    width: 48%;
+    width: 48.5%;
   }
   .filterContainer li:hover {
     background-color: var(--filter-bg-color);
+  }
+
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting ant popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .hostingAndPopular {
+    flex-direction: column-reverse;
+  }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .popular {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px;
+  }
+  .popular .cardContainer {
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
   }
 }
