@@ -117,15 +117,26 @@ h1 {
 .filterContainer,
 .filterContainer ul,
 .filterContainer li {
-  height: 50px;
   display: flex;
   align-items: center;
   gap: 13px;
+}
+.filterContainer > h3 {
+  border: solid 1px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: start;
+}
+.filterContainer ul {
+  flex-wrap: wrap;
 }
 .filterContainer i {
   color: var(--main-color);
 }
 .filterContainer li {
+  height: 50px;
   padding: 19px;
   border: solid 2px var(--seconde-bg-color);
   border-radius: 25px;
@@ -337,6 +348,7 @@ footer li {
 
   /*<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>*/
   header {
+    border: solid 1px;
     height: fit-content;
     flex-direction: column;
   }
@@ -360,26 +372,37 @@ footer li {
 
   /*<<<<<<<<<<<<<<<<<<<<<   find   >>>>>>>>>>>>>>>>>>>>>>>*/
   .find {
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 0;
+    padding: 40px 20px 0px 20px;
+    border: solid 1px;
   }
 
   /* form *********************/
   .find form {
+    width: 100%;
   }
   .find form input[type="text"] {
-    padding: 0 24px;
-    width: 195px;
-  }
-  .find form ::placeholder {
-    font-size: 17px;
-    font-weight: 600;
-    color: black;
+    flex-grow: 1;
   }
   .find form button {
     display: none;
   }
   .find button:last-child {
     display: block;
+  }
+
+  /* filterContainer ***************/
+  .filterContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+  .filterContainer i {
+    color: var(--main-color);
+  }
+  .filterContainer li {
+    width: 48%;
+  }
+  .filterContainer li:hover {
+    background-color: var(--filter-bg-color);
   }
 }
