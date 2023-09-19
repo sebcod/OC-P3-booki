@@ -16,8 +16,6 @@
   list-style: none;
   border: none;
   outline: none;
-
-  /* box-shadow: 0 0 0 3px red inset; */
 }
 a {
   color: inherit;
@@ -101,7 +99,7 @@ h1 {
   font-size: 18px;
   border: solid 2px var(--main-color);
   border-radius: 0 10px 10px 0;
-  scale: 1.08;
+  transform: scale(1.08);
 }
 .find button:last-child {
   box-shadow: var(--Box-shadow-2);
@@ -109,7 +107,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  scale: 1.08;
+  transform: scale(1.08);
   width: 60px;
   display: none;
 }
