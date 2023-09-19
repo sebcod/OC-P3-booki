@@ -314,25 +314,25 @@ footer li {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< Media queries >>>>>>>>>>>>>>>>>>>>>>>>*/
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media screen and (max-width: 1024px) {
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 1024px Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
   .hostingAndPopular {
     flex-direction: column;
   }
   .hosting {
     width: 100%;
   }
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 1024px Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
   .popular {
     width: 100%;
   }
   .popular .cardContainer {
     flex-direction: row;
   }
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Activities >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 1024px Activities >>>>>>>>>>>>>>>>>>>>>>>>*/
   .cardActivities img {
     height: 18vw;
   }
@@ -340,12 +340,12 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Body >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 768px Body >>>>>>>>>>>>>>>>>>>>>>>>*/
   body {
     padding: 0;
   }
 
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 768px header >>>>>>>>>>>>>>>>>>>>>>>>*/
   header {
     height: fit-content;
     flex-direction: column;
@@ -368,13 +368,13 @@ footer li {
     border-bottom: solid 2px var(--main-color);
   }
 
-  /*<<<<<<<<<<<<<<<<<<<<<   find   >>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<   Responsive 768px find   >>>>>>>>>>>>>>>>>>>>>>>*/
   .find {
     margin-top: 0;
     padding: 40px 20px 0px 20px;
   }
 
-  /* form *********************/
+  /* Responsive 768px form *********************/
   .find form {
     width: 100%;
   }
@@ -388,7 +388,7 @@ footer li {
     display: block;
   }
 
-  /* filterContainer ***************/
+  /* Responsive 768px filterContainer ***************/
   .filterContainer {
     flex-direction: column;
     align-items: start;
@@ -403,11 +403,12 @@ footer li {
     background-color: var(--filter-bg-color);
   }
 
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting ant popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 768px Hosting ant popular >>>>>>>>>>>>>>>>>>>>>>>>*/
   .hostingAndPopular {
     flex-direction: column-reverse;
+    gap: 0;
   }
-  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 768px Popular >>>>>>>>>>>>>>>>>>>>>>>>*/
   .popular {
     width: 100%;
     padding: 20px;
@@ -417,5 +418,62 @@ footer li {
     flex-direction: column;
     margin-top: 15px;
     gap: 15px;
+  }
+  /*<<<<<<<<<<<<<<<<<<<<<<<<<< Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
+  .hosting {
+    border-radius: 0px;
+    background-color: var(--boddy-bg-color);
+    padding: 20px;
+    width: 100%;
+  }
+  .cardContainer {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    gap: 15px;
+  }
+  .card {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: var(--boddy-bg-color);
+    box-shadow: var(--Box-shadow);
+    padding: 5px 5px 10px 5px;
+    border-radius: 20px;
+  }
+  .card img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+  }
+  .cardContent {
+    padding: 0 10px;
+    letter-spacing: 1px;
+  }
+  .cardContent h3 {
+    font-size: 0.9em;
+    margin: 6px 0 10px;
+  }
+  .cardContent p {
+    margin-bottom: 15px;
+    font-size: 0.74em;
+  }
+  .cardContent ul,
+  .cardContent li {
+    display: flex;
+    color: var(--main-color);
+    margin-bottom: 5px;
+  }
+  .cardContent li:last-child {
+    color: var(--main-bg-color);
+  }
+  .cardContent span {
+    font-weight: 800;
+  }
+  .hosting > a {
+    font-weight: 800;
   }
 }
