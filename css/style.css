@@ -137,6 +137,7 @@ h1 {
 .filterContainer li {
   height: 50px;
   padding: 19px;
+  font-size: 17px;
   border: solid 2px var(--seconde-bg-color);
   border-radius: 25px;
   text-transform: capitalize;
@@ -324,6 +325,10 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media screen and (max-width: 1024px) {
+  /* Responsive 1024px filterContainer ***************/
+  .filterContainer li {
+    font-size: 16px;
+  }
   /*<<<<<<<<<<<<<<<<<<<<<<<<<< Responsive 1024px Hosting >>>>>>>>>>>>>>>>>>>>>>>>*/
   .hostingAndPopular {
     flex-direction: column;
@@ -403,7 +408,8 @@ footer li {
     color: var(--main-color);
   }
   .filterContainer li {
-    width: 48.5%;
+    font-size: 12px;
+    flex-basis: 48%;
   }
   .filterContainer li:hover {
     background-color: var(--filter-bg-color);
