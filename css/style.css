@@ -100,7 +100,8 @@ h1 {
   font-weight: 600;
   font-size: 18px;
   border: solid 2px var(--main-color);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 10px 10px 0;
+  scale: 1.08;
 }
 .find button:last-child {
   box-shadow: var(--Box-shadow-2);
@@ -320,12 +321,13 @@ footer li {
   margin-top: 15px;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<               >>>>>>>>>>>>>>>>>>>>>>>>*/
 /*<<<<<<<<<<<<<<<<<<<<<<<<<< Media queries >>>>>>>>>>>>>>>>>>>>>>>>*/
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<               >>>>>>>>>>>>>>>>>>>>>>>>*/
 
+/* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
-  /* Responsive 1024px filterContainer ***************/
+  /*<<<<<<<<<<<<<<<<<<<<<<< Responsive 1024px filterContainer >>>>>>>>>>>>>>>>>>*/
   .filterContainer li {
     font-size: 16px;
   }
